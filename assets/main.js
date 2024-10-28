@@ -15,3 +15,19 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".item").forEach((item) => observer.observe(item));
+
+var mobileMenu = document.getElementById("mobile-menu");
+var openMenu = document.getElementById("open");
+var btnMenu = document.getElementById("header-btn");
+var check = true;
+mobileMenu.onclick = function () {
+  if (check === true) {
+    openMenu.style.display = "flex";
+    btnMenu.style.top = "17%";
+    check = false;
+  } else {
+    openMenu.style.display = "none";
+    check = true;
+    btnMenu.style.top = "50%";
+  }
+};

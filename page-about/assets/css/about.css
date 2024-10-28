@@ -2,37 +2,23 @@
 .header__navbar {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding: 20px;
 }
 
-.header__navbar--logo {
+.header__navbar .header__navbar--logo .header__navbar--logo-img {
   margin-left: 100px;
 }
 
-.header__navbar--list {
-  display: flex;
-  align-items: center;
-}
-
-.header__navbar--login {
+.header__navbar .header__navbar--login {
   margin-right: 130px;
 }
 
-.icon-mobile i {
-  display: none;
-}
-
-.icon-mobile ul {
+.header__navbar .header__navbar--list ul {
   display: inline-block;
   list-style: none;
 }
 
-.icon-mobile ul li:nth-child(2) a {
-  color: var(--second-color);
-}
-
-.icon-mobile ul li {
+.header__navbar .header__navbar--list ul li {
   display: inline-block;
   margin: 0 23px;
   font-size: 18px;
@@ -40,23 +26,32 @@
   line-height: 60px;
 }
 
-.icon-mobile ul li a {
+.header__navbar .header__navbar--list ul li a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
 }
 
-.icon-mobile ul li:hover a {
+.header__navbar .header__navbar--list ul li:nth-child(2) a {
   color: var(--second-color);
 }
 
-.header__navbar--login .btn {
+.header__navbar .header__navbar--list ul li:hover a {
+  color: var(--second-color);
+}
+
+.header__navbar .header__navbar--login .btn {
   font-size: 18px;
   padding: 18px 41px;
   background-color: var(--second-color);
   border-radius: 40px;
   font-weight: 600;
   border: none;
+}
+
+.header__navbar .header__navbar--login .btn:hover {
+  background-color: rgba(13, 0, 30, 1);
+  color: var(--text-color);
 }
 
 .header__content {
@@ -416,5 +411,5 @@ footer {
   background-color: rgba(13, 0, 30, 1);
 }
 .icon-mobile {
-  /* display: none; */
+  display: none;
 }
