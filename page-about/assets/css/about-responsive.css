@@ -217,6 +217,7 @@
   .container__content--img {
     width: 100%;
     padding-left: 0px;
+    margin: 0 auto;
   }
 
   .container__content--img {

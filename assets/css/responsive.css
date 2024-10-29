@@ -65,7 +65,7 @@
   }
 
   .list-contain {
-    width: 100%;
+    max-width: 100%;
   }
 
   .container-img {
@@ -76,7 +76,7 @@
   .list-type__content {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    gap: 8%;
+    max-width: 100%;
   }
 
   .list-type__header h2 {
@@ -141,6 +141,7 @@
   .header__search-content {
     width: 100%;
     flex-direction: column;
+    padding: 0 20px 100px 20px;
   }
 
   .header__search-content--p {
